@@ -1,0 +1,12 @@
+fst = int(input("insert the first number: "))
+snd = int(input("insert the second number: "))
+trd = int(input("insert the third number: "))
+if fst < snd < trd:
+    print(fst, snd, trd)
+    print("ascending order")
+elif trd < snd < fst:
+    print(trd, snd, fst)
+    print("descending order")
+else:
+    print(fst, snd, trd)
+    print("other")
