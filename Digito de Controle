@@ -1,12 +1,12 @@
-numl=int(input("enter a three digit number: "))
-if 99<numl<1000:
-  prim=numl // 100
-  seg=numl // 10 - (prim * 10)
-  ter=numl - (prim * 100 + seg * 10)
-  quar=((prim + seg * 3 + ter * 5) % 7)
-  if quar % 2 == 0:
-    print(f"{numl}{quar+1}")
-  else:
-    print(f"{numl}{quar}")
+numl = int(input("enter a three digit number: "))
+if 99 < numl < 1000:
+    prim = numl // 100
+    seg = numl // 10 - (prim * 10)
+    ter = numl - (prim * 100 + seg * 10)
+    quar = ((prim + seg * 3 + ter * 5) % 7)
+    if quar % 2 == 0:
+        print(f"{numl}{quar+1}")
+    else:
+        print(f"{numl}{quar}")
 else:
     print("this number is invalid!")
