@@ -1,0 +1,20 @@
+nlaps = 0
+deltalaps = 0
+twopiR = 0
+Twopir = 0
+fastest = 0
+slowest = 9999
+while deltalaps != -1:
+    deltalaps = int(
+        input("Enter the speed for each lap: #use km/h #use -1 to stop" "\n"))
+    if deltalaps > fastest and deltalaps != -1:
+        fastest = deltalaps
+        twopiR = nlaps+1  # twopiR guarda a votla mais rapida
+    if deltalaps < slowest and deltalaps != -1:
+        slowest = deltalaps
+        Twopir = nlaps+1  # Twopir guarda a volta mais lenta
+    nlaps = nlaps+1  # nlaps guarda o total de voltas
+print(f"Total laps: {nlaps}")
+print(f"Fastest lap: {twopiR}")
+print(f"Worst speed: {slowest}Km/h, (volta {Twopir})")
+# perguntar pra professora como deixar os números um do lado do outro
