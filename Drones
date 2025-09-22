@@ -1,13 +1,14 @@
+# incializando as variaveis que incrementam
 nlaps = 0
 deltalaps = 0
 twopiR = 0
 Twopir = 0
 fastest = 0
-slowest = 9999
+slowest = 1079252849.01  # literalmente maior que a velocidade da luz
 while deltalaps != -1:
     deltalaps = int(
         input("Enter the speed for each lap: #use km/h #use -1 to stop" "\n"))
-    if deltalaps > fastest and deltalaps != -1:
+    if deltalaps > fastest and deltalaps != -1:  # usando a diferença pra garantir que o -1 não vai interferir
         fastest = deltalaps
         twopiR = nlaps+1  # twopiR guarda a votla mais rapida
     if deltalaps < slowest and deltalaps != -1:
