@@ -7,19 +7,21 @@ lesser_total = 0
 greater_total = 0
 while fish_caught > counter:
     # repetição para quando inserimos todos os peixes
-    fish_weight = int(input("enter the fish's weight (in grams)"))
-# dividimos entre peixes com mais ou menos que 500 gramas
+    fish_weight = int(input("enter the fishes' weight (in grams)"))
+# dividimos entre peixes com mais
     if fish_weight <= 500:
-        ideal_cost = 5/(fish_weight/1000)
+        ideal_cost = 5*(fish_weight/1000)
         total_weightl = total_weightl+fish_weight
         lesser_total = lesser_total+ideal_cost
+# ou menos que 500 gramas
     else:
-        ideal_cost = 10/(fish_weight/1000)
+        ideal_cost = 10*(fish_weight/1000)
         total_weightg = total_weightg+fish_weight
         greater_total = greater_total+ideal_cost
     counter = counter+1
 # perguntar pra professora como deixar mais bonito
 # perguntar pra professora como exibir todos os peixes em linha como no exemplo
+# perguntar pra professora como usar melhor os comentários
 print(f"fishes with more then 500g:")
 print(f"weight={total_weightg/1000}Kg")
 print(f"revenue={greater_total}U$")
